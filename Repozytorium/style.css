@@ -1,10 +1,23 @@
-body{
-    background-color: rgb(131, 160, 160);
-}
-body>header{
-    border: 2px dashed red;
+:root{
+    font-size: 16px;
 }
 
-body>header input:checked ~ nav {
-    border: 6px dashed blue;
+body {
+  background-color: rgb(131, 160, 160);
+}
+body > header {
+  border: 2px dashed red;
+}
+
+body > header input:checked ~ nav {
+  border: 6px dashed blue;
+}
+body > header input {
+  display: none;
+}
+body > header label {
+  border: 2px dashed green;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
 }
