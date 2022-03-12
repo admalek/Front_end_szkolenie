@@ -1,23 +1,80 @@
-:root{
-    font-size: 16px;
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
 }
 
 body {
   background-color: rgb(131, 160, 160);
+  margin: 0;
 }
 body > header {
   border: 2px dashed red;
+  position: relative;
 }
 
-body > header input:checked ~ nav {
-  border: 6px dashed blue;
-}
 body > header input {
   display: none;
 }
 body > header label {
-  border: 2px dashed green;
+  border: 2px dashed rgb(0, 0, 0);
+  border-radius: 8px;
+
   width: 3rem;
   height: 3rem;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.3rem;
+}
+
+body > header label div {
+  transition: 1.8s;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: black;
+  border-radius: 2px;
+  width: 100%;
+}
+body > header p {
+  border: 2px dashed pink;
+  margin-left: 3rem;
+}
+body > header nav {
+  border: 2px dashed rgb(26, 179, 38);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(151, 150, 150);
+
+  display: none;
+}
+body > header nav a {
+  text-decoration: none;
+  color: #fff;
+}
+body > header input:checked ~ nav {
+  display: flex;
+  border: 6px dashed blue;
+}
+body > header input:checked ~ label {
+  padding: 0;
+}
+body > header input:checked ~ label div:nth-child(1) {
+  border-color: rgb(0, 0, 0);
+  transform: rotate(45deg);
+  position: absolute;
+}
+body > header input:checked ~ label div:nth-child(2) {
+  border-color: rgb(0, 0, 0);
+  transform: rotate(-45deg);
+  position: absolute;
+}
+body > header input:checked ~ label div:nth-child(3) {
+  display: none;
 }
