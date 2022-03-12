@@ -1,0 +1,98 @@
+/* Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.wrapper {
+  background-color: hsl(216, 50%, 16%);
+  width: 380px;
+  min-height: 600px;
+  box-shadow: 0px 20px 15px 1px hsl(217, 54%, 11%);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.wrapperImage{
+width: 100%;
+border-radius: 10px;
+
+}
+.wrapperTitle{
+  color:#fff;
+  font-size: 23px;
+  margin-top: 18px;
+  
+
+}
+.wrapperDesc{
+  color: hsl(178, 10%, 50%);
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: 18px;
+}
+.wrapperETH{
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 28px;
+
+
+}
+.wrapperEthInfo{
+  color: cyan;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+  display: flex;
+  gap: 8px; 
+}
+.wrapperCash{
+  color: hsl(215,51%,70%);
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+.wrapperbottom{
+  color: #fff;
+  display: flex;
+  align-items:center;
+  gap: 15px;
+}
+.wrapperbottom img{
+  width: 35px;
+  border: 2px solid   rgb(148, 145, 145);
+  border-radius: 50%;
+}
+.wrapperbottom p{
+  color: hsl(215, 51%, 70%);
+}
+.wrapperbottom span{
+  color: #fff;
+}

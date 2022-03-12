@@ -1,0 +1,97 @@
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+.wrapper{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  height: 500px;
+  background-color: gold;
+  box-sizing: border-box;
+
+}
+
+.square{
+  
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+
+}
+
+
+
+
+
+
+
+
+
+/* Selektory: 
+-id #
+-klasy .
+-znacznika (nazwa elementu np h1) 
+-gwiazdka 
+*/
+
+/* * {
+  margin: 0;
+  padding: 0;
+}
+#Title {
+  color: green;
+}
+.pageTitle {
+  color: blue;
+}
+h1 {
+  color: orange;
+} */
+/* 
+html {
+  font-size: 10px;
+}
+
+.wrapper {
+  height: 200px;
+  background-color: gold;
+  border: 3px solid black;
+  width: 450px;
+}
+
+.wrapper1 {
+  height: 200px;
+  background-color: aqua;
+  border: 3px solid black;
+  width: 50%;
+}
+
+.wrapper2 {
+  width: 50%;
+  height: 300px;
+  background-color: bisque;
+  margin-top: 30px;
+  border: 3px solid black;
+}
+.innerWrapper {
+  height: 70%;
+  width: 50%;
+  background-color: red;
+}
+
+.remTitle {
+  font-size: 5rem;
+}
+
+.textWrapper {
+  font-size: 20px;
+}
+.minorText {
+  font-size: 2em;
+} */

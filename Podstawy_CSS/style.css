@@ -1,0 +1,80 @@
+/* display: block - wyswietla jedno pod drugim */
+/* display: inline - jeden obok drugiego + nie działa width i height */
+/* display: inline-block - jeden obok drugiego i działa width,height */
+/* display:none - nic nie wyświetla */
+
+/*selectory
+-id ''#'' najsilniejszy
+-klasy ''.''
+-znacznika
+-gwiazdka
+
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%
+}
+
+#Title{
+    color: red;
+}
+
+
+.wrapper
+
+body{
+    background-color: rgb(87, 129, 129);
+}
+.card{
+    
+    background-color: #fff;
+    width: 275px;
+    min-height: 150px;
+    box-shadow: 0px 5px 15px 1px rgb(37, 29, 309);
+    margin: 25px;
+    border-radius: 15px;
+    display: inline-block;
+    float:left;
+
+    
+}
+.userName{
+    font-size: 28px;
+    color: rgb(37, 29, 309);
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+
+    }
+.userDesc{
+    padding: 25px;
+    margin: 20px;
+    color:green;
+    text-align: center;
+
+}
+.userBtn{
+    display: block;
+    margin-left: 60px;
+    margin-right: 50px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(87, 129, 129);
+    color: #fff;
+    text-transform: lowercase;
+    text-align: center;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+  
